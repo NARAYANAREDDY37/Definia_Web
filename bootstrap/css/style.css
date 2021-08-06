@@ -13,7 +13,7 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 .bg-light {
-	background-color: whitesmoke;
+	background-color: unset !important;
 }
 
 .text-def {
@@ -51,37 +51,36 @@ body {
 
 .right-content {
 	text-align: left;
-  top: 0;
+	top: 0;
 }
 
 .right-content > p {
 	font-size: 60px;
 }
 
-.right-content div {
-	position: relative;
-	left: 50px;
+.right-content h5 {
+	max-width: 200px;
+	cursor: pointer;
+}
+
+.right-content div:hover {
+	color: #96eae0;
 }
 
 .right-content p {
 	position: relative;
-	margin-left: 50px;
 	font-size: 10px;
 	text-align: left;
+	cursor: pointer;
 }
 
 .service-text::after {
 	content: '';
 	display: block;
-	width: 500px;
 	height: 2px;
 	background: #fff;
-	position: absolute;
-	left: 0;
 }
 
-.break-line {
-}
 .navbar-toggler {
 	color: black;
 }
@@ -96,7 +95,8 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	float: left;
+	position: absolute;
+	left: -45px;
 }
 
 .active-text {
@@ -121,9 +121,10 @@ body {
 	height: 200px;
 }
 
-button {
+.middle-section a {
 	padding: 10px 30px;
 	background: #96eae0;
+	color: black;
 	border: none;
 	font-size: 15px;
 	margin-top: 20px;
@@ -136,4 +137,110 @@ button {
 	background: white url(../../images/main2.jpg) no-repeat scroll center;
 	background-size: cover;
 	height: 80vh;
+}
+
+.about-wrapper {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	color: white;
+	padding: 2rem;
+	width: 700px;
+	position: relative;
+	bottom: 18rem;
+	margin: 5rem;
+}
+
+.about-card-section {
+	position: relative;
+	bottom: 15rem;
+	right: 3rem;
+}
+
+.about-cards {
+}
+
+.about-card {
+	padding: 4rem;
+	width: 400px;
+}
+
+/* Profile section */
+
+.profile-section {
+	margin-bottom: 5rem;
+}
+
+.profile-name {
+	margin-top: 2rem;
+}
+
+.profile-name h3 {
+	display: inline-block;
+	left: 0;
+}
+
+.social-icons {
+	float: right;
+}
+
+.social-icons i {
+	padding: 20px;
+	color: #96eae0;
+	justify-content: center;
+	border-right: 1px solid gray;
+}
+
+.social-icons i:nth-child(3) {
+	border-right: none;
+}
+
+.profile-img {
+	position: relative;
+	bottom: 5rem;
+}
+
+.profile-img img {
+	width: 300px;
+}
+
+.back-icon {
+}
+
+.back-icon a i {
+	background: #96eae0;
+	color: black;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+
+/* media queries */
+
+/* index page */
+
+@media only screen and (max-width: 768px) {
+	.landing-section {
+		display: block;
+	}
+	.left-content {
+		margin-top: 10rem;
+	}
+	.right-content {
+		margin: 2rem 7rem;
+	}
+	.middle-section {
+		display: block;
+	}
+	/* about page */
+	.about-wrapper {
+		max-width: 50%;
+		margin: 0 30px;
+		padding: 0;
+		text-align: center;
+		font-size: 8px;
+	}
+	.about-card-section {
+		flex-direction: column;
+	}
+	.about-cards {
+		display: block;
+	}
 }
