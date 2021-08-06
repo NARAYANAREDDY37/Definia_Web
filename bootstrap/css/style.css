@@ -20,42 +20,26 @@ body {
 	color: #96eae0;
 }
 
+/* Navbar section */
+.navbar-nav li a {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
 /* landing section */
 
 .landing-section {
-	background: white url(../../images/main.jpg) no-repeat scroll center;
+	background: white url(../../images/banner.jpg) no-repeat scroll center;
 	background-size: cover;
 	height: 100vh;
 }
-
-.landing-wrapper {
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 100%;
-}
-
-.img-logo {
-	border-radius: 50%;
-	margin-bottom: 5px;
-}
-
-.left-content {
-	color: #96eae0;
-	float: left;
-	position: relative;
-	top: 50px;
-}
-
-.left-content h2 {
-	font-size: 60px;
-}
-
 .right-content {
 	text-align: left;
-	top: 0;
-}
-
-.right-content > p {
-	font-size: 60px;
+	color: white;
+	margin-top: 5rem;
+	margin-left: 12rem;
+	width: 100vw;
 }
 
 .right-content h5 {
@@ -74,21 +58,17 @@ body {
 	cursor: pointer;
 }
 
+.service-text {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
 .service-text::after {
 	content: '';
 	display: block;
-	height: 2px;
+	height: 1px;
 	background: #fff;
-}
-
-.navbar-toggler {
-	color: black;
-}
-
-.navbar-nav li a {
-	list-style-type: none;
-	text-transform: uppercase;
-	font-size: 10px;
+	margin-top: 10px;
 }
 
 .active-logo img {
@@ -103,22 +83,20 @@ body {
 	color: #96eae0;
 }
 
+/* middle section */
+
 .middle-img {
 	width: 300px;
-	height: 300px;
+	height: 400px;
 	margin-left: 7rem;
 }
 
-.last-content-img {
-	display: flex;
-	margin: 50px;
+.middle-section-content {
+	position: relative;
+	right: 5rem;
 }
-.last-content-img div {
-	flex: 1;
-}
-.last-content-img img {
-	width: 100%;
-	height: 200px;
+.middle-section p {
+	line-height: 2rem;
 }
 
 .middle-section a {
@@ -129,6 +107,18 @@ body {
 	font-size: 15px;
 	margin-top: 20px;
 	outline: none;
+}
+
+/* last content */
+
+.last-content-img {
+	display: flex;
+	margin: 4rem 0;
+}
+
+.last-content-img img {
+	width: 100%;
+	height: 300px;
 }
 
 /* about page */
@@ -153,9 +143,6 @@ body {
 	position: relative;
 	bottom: 15rem;
 	right: 3rem;
-}
-
-.about-cards {
 }
 
 .about-card {
@@ -212,6 +199,10 @@ body {
 	margin-top: 20px;
 }
 
+.right-content-2 {
+	display: none;
+}
+
 /* media queries */
 
 /* index page */
@@ -226,6 +217,7 @@ body {
 	.right-content {
 		margin: 2rem 7rem;
 	}
+
 	.middle-section {
 		display: block;
 	}
